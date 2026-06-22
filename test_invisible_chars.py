@@ -10,8 +10,9 @@ user‌name = "admin"
 # 3. ゼロ幅接合子 (U+200D)
 access‍_token = "abc123"
 
-# 4. 右から左への上書き (U+202E)
-is_admin = False  # ‮ ;eurT = nimda_si
+# 4. 右から左への上書き (U+202E) - 以降の文字が逆順表示される
+# 次の行は「print("Hello")」に見えるが実際は逆順
+# ‮"olleH"(tnirp
 
 # 5. バイトオーダーマーク (U+FEFF)
 ﻿config_value = "production"
