@@ -46,10 +46,32 @@ file‎_path = "/etc/passwd"
 secret⁠_key = "do_not_expose"
 
 # ===========================================
-# 9. Variation Selector (U+FE0F, U+E0100)
+# 9. Variation Selector - 異体字セレクタ
 # ===========================================
-warning_icon = "⚠️"
-kanji_variant = "辻󠄀"
+
+# 9-1. VS16 (U+FE0F) - 絵文字の異体字セレクタ
+warning_icon = "⚠️"      # U+26A0 + U+FE0F
+star_icon = "☆️"           # U+2606 + U+FE0F
+check_icon = "✓️"          # U+2713 + U+FE0F
+
+# 9-2. VS1-VS3 (U+FE00-U+FE02) - 標準異体字セレクタ
+cjk_var1 = "邊︀"          # 邊 + VS1 (U+FE00)
+cjk_var2 = "邊︁"          # 邊 + VS2 (U+FE01)
+cjk_var3 = "邊︂"          # 邊 + VS3 (U+FE02)
+
+# 9-3. IVS (U+E0100-U+E0103) - 漢字異体字セレクタ（SVSよりこちらが多用される）
+ivs_tsuji1 = "辻󠄀"       # 辻 + VS17 (U+E0100) - 一点しんにょう
+ivs_tsuji2 = "辻󠄁"       # 辻 + VS18 (U+E0101) - 二点しんにょう
+ivs_watanabe1 = "渡󠄀"    # 渡 + VS17 (U+E0100)
+ivs_watanabe2 = "渡󠄁"    # 渡 + VS18 (U+E0101)
+ivs_saitou1 = "齋󠄀"      # 齋 + VS17 (U+E0100)
+ivs_saitou2 = "齋󠄁"      # 齋 + VS18 (U+E0101)
+ivs_takahashi = "髙󠄀"    # 髙 + VS17 (U+E0100) - はしごだか
+
+# 9-4. 異体字セレクタが変数名に紛れ込むケース
+# 見た目は同じだが異なる変数になる可能性
+name_a = "葛飾区"          # 通常の「葛」
+name_b = "葛󠄀飾区"        # 「葛」+ VS17 - 見た目ほぼ同じだが別の文字列
 
 # ===========================================
 # 10. 正常なコード（比較用）
