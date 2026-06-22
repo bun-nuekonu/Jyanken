@@ -11,8 +11,8 @@ user‌name = "admin"
 access‍_token = "abc123"
 
 # 4. 右から左への上書き (U+202E)
-# 実際にはprint("Hello")と書いてある
-print("Hello")‮
+# 実際にはprint("Hello")と書いてあるが逆順表示される
+‮print("Hello")
 
 # 5. バイトオーダーマーク (U+FEFF)
 ﻿config_value = "production"
