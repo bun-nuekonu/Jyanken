@@ -10,9 +10,9 @@ user‌name = "admin"
 # 3. ゼロ幅接合子 (U+200D)
 access‍_token = "abc123"
 
-# 4. 右から左への上書き (U+202E) - U+202E以降の文字が逆順表示される
-# 次の行のコメント部分が逆に表示されているはず
-print("Hello")  ‮# 実際にはprint("Hello")と書いてある
+# 4. 右から左への上書き (U+202E)
+# 実際にはprint("Hello")と書いてある
+print("Hello")‮
 
 # 5. バイトオーダーマーク (U+FEFF)
 ﻿config_value = "production"
